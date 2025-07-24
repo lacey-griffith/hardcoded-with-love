@@ -1,0 +1,40 @@
+.header-container {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/bg-images/succulent-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--text-light);
+  padding: 8rem 2rem 6rem;
+  text-align: center;
+}
+
+.header-container h1 {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+.header-container p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.header-container a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header-container a:hover {
+  text-decoration: underline;
+}

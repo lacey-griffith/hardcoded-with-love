@@ -1,0 +1,110 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px; /* base for rem units */
+  }
+  
+  body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background-image: url('/images/background_desktop.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: #111;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Mobile override */
+  @media (max-width: 768px) {
+    body {
+      background-image: url('/images/background_mobile.png');
+      background-size: cover;
+      background-repeat: repeat;
+      background-attachment: scroll; /* often better on mobile */
+    }
+  }
+  
+  
+  
+  /* ===== COLOR VARIABLES ===== */
+  :root {
+    --sky-blue: #88BAC8;
+    --teal: #4D869B;
+    --deep-green: #336063;
+    --navy: #333A57;
+    --plum: #422C47;
+  
+    --text-light: #F2F2F2;
+    --text-dark: #1A1A1A;
+    --accent: var(--sky-blue);
+  }
+  
+  /* ===== TYPOGRAPHY ===== */
+  h1, h2, h3, h4 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--text-light);
+  }
+  
+  /* ===== LINKS ===== */
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+  
+  /* ===== BUTTONS ===== */
+  button {
+    background-color: var(--accent);
+    color: var(--text-dark);
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #6FA9B7;
+  }
+  
+  /* ===== LAYOUT HELPERS ===== */
+  section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* ===== ACCESSIBILITY ===== */
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+  }
+  

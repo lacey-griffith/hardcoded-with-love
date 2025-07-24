@@ -1,0 +1,12 @@
+.carousel-wrapper {
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  .carousel-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+  
