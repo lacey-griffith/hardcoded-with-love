@@ -1,17 +1,24 @@
-.about-container {
-  background-color: var(--teal);
-  color: var(--text-light);
-  padding: 6rem 2rem;
+.section-bubble {
+  border-radius: 2rem;
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
 
-.about-container h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+.neon-pink {
+  background-color: #ff3cac;
+  color: #111;
 }
 
-.about-container p {
-  font-size: 1.125rem;
-  max-width: 700px;
-  margin: 0 auto 1rem;
+.neon-pink p {
+  color: #111;
+  line-height: normal;
+}
+
+.about-container img {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin-top: 2rem;
 }

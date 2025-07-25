@@ -1,0 +1,46 @@
+.hero {
+    background-color: #fff740;
+    border-radius: 2rem;
+    padding: 4rem 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    box-shadow: 0 0 10px #f9ff4a;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #111;
+  }
+  
+  .hero h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-buttons button {
+    background: #111;
+    color: #fff740;
+    border-radius: 999px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border: none;
+  }
+  
+  .hero-buttons button:hover {
+    transform: scale(1.05);
+  }
+  

@@ -1,17 +1,23 @@
 import React from 'react';
 import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import './imageCarousel.css';
+
 
 const ImageCarousel = () => {
   const images = [
-    '/images/carousel/photo1.jpg',
-    '/images/carousel/photo2.jpg',
-    '/images/carousel/photo3.jpg',
-    '/images/carousel/photo4.jpg',
+
+    '/images/image_lacey.png',
+    '/images/image_LaceyRuger.png',
+    '/images/image_LaceyTyler.png',
+    '/images/image_lacey3.png',
+    '/images/image_ruger.png',
+
   ];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

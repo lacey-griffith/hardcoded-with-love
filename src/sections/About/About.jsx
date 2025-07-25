@@ -1,16 +1,16 @@
 import React from 'react';
-import './about.css';
+import './About.css';
 import ImageCarousel from '../../components/ImageCarousel';
 
 function About() {
   return (
-    <div className="about-container">
+    <section className="section-bubble neon-pink">
       <h2>About Me</h2>
       <p>I’m a developer who loves clean code, clever UX, and a good cup of tea.</p>
+      <p>I bring creativity, business sense, and problem-solving to every project—whether it's a solo build or a team collab.</p>
       <ImageCarousel />
-    </div>
+    </section>
   );
 }
-
 
 export default About;
