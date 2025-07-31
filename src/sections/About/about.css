@@ -1,18 +1,4 @@
-.section-bubble {
-  border-radius: 2rem;
-  padding: 4rem 2rem;
-  margin: 2rem auto;
-  max-width: 1000px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  text-align: center;
-}
-
-.neon-pink {
-  background-color: #ff3cac;
-  color: #111;
-}
-
-.neon-pink p {
+.about-container p {
   color: #111;
   line-height: normal;
 }

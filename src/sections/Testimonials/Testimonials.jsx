@@ -1,8 +1,6 @@
 import React from 'react';
 import './testimonials.css';
 
-import React from 'react';
-import './testimonials.css';
 
 function Testimonials() {
   const reviews = [
@@ -21,17 +19,15 @@ function Testimonials() {
   ];
 
   return (
-    <div className="testimonials-container">
-      <h2>Nice Things People Say</h2>
-      <div className="testimonial-list">
-        {reviews.map((review, index) => (
-          <blockquote key={index} className="testimonial-card">
-            <p>“{review.quote}”</p>
-            <footer>— {review.author}</footer>
-          </blockquote>
-        ))}
-      </div>
-    </div>
+    <section className="testimonial-container section-parent neon-green">
+      <h2>Testimonials</h2>
+      {reviews.map((item, i) => (
+        <blockquote key={i} className="testimonial-quote">
+          <p>“{item.quote}”</p>
+          <footer>– {item.author}</footer>
+        </blockquote>
+      ))}
+    </section>
   );
 }
 

@@ -32,18 +32,28 @@
   }
   
   
-  
   /* ===== COLOR VARIABLES ===== */
-  :root {
-    --sky-blue: #88BAC8;
-    --teal: #4D869B;
-    --deep-green: #336063;
-    --navy: #333A57;
-    --plum: #422C47;
-  
-    --text-light: #F2F2F2;
-    --text-dark: #1A1A1A;
-    --accent: var(--sky-blue);
+  /* :root {
+  } */
+
+  /* ===== SECTION BG COLORS ===== */
+  .neon-yellow {
+    background-color: #fff740;
+  }
+  .neon-pink {
+    background-color: #ff3cac;
+  }
+  .neon-blue {
+    background-color: #00cfff;
+  }
+  .neon-purple {
+    background-color: #b24eff;
+  }
+  .neon-orange {
+    background-color: #ff9f1c;
+  }
+  .neon-green {
+    background-color: #39ff14;
   }
   
   /* ===== TYPOGRAPHY ===== */
@@ -96,12 +106,13 @@
   }
   
   /* ===== LAYOUT HELPERS ===== */
-  section {
+  .section-parent {
+    max-width: 1000px;
+    margin: 2rem auto;
     padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    border-radius: 2rem;
   }
-  
+
   /* ===== ACCESSIBILITY ===== */
   :focus-visible {
     outline: 2px solid var(--accent);

@@ -3,7 +3,7 @@ import './contact.css';
 
 function Contact() {
   return (
-    <div className="contact-container">
+    <div className="contact-container neon-green section-parent">
       <h2>Contact</h2>
       <p>Let’s make something magical together.</p>
       <form>

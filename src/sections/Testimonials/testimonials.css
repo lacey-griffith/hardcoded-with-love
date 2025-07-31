@@ -1,25 +1,8 @@
-.testimonials-container {
-    padding: 6rem 2rem 4rem;
-    scroll-margin-top: 80px;
-    background-color: #336063;
-    color: white;
-    text-align: center;
-    margin-top: -80px; 
-  }
-
-  
-  .testimonial-list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .testimonial-card {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-left: 4px solid #88BAC8;
-    padding: 1.5rem;
-    border-radius: 12px;
-    font-style: italic;
-  }
-  
+.testimonial-quote {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  max-width: 700px;
+  font-style: italic;
+}

@@ -3,7 +3,7 @@ import './Hero.css';
 
 function Hero() {
     return (
-      <section className="hero">
+      <section className="hero neon-yellow section-parent">
         <div className="hero-content">
           <h1>Lacey Hay</h1>
           <h2>Creative Web Dev & Tech Sorceress</h2>
