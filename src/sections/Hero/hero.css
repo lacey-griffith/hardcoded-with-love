@@ -1,3 +1,8 @@
+.hero .hero-flex {
+  display: flex;
+  justify-content: center;
+}
+
 .hero {
     padding: 4rem 2rem;
     margin: 2rem auto;
@@ -15,7 +20,7 @@
   
   .hero h2 {
     font-size: 1.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: .25rem;
     font-weight: 500;
     color: #333;
   }
