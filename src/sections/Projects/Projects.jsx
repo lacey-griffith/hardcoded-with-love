@@ -6,19 +6,18 @@ function Projects() {
     {
       title: 'Herbal Haven',
       description: 'Tea curation & education app built with React + MongoDB.',
-      image: '/images/projects/herbal-haven.png',
+      image: '',
       github: 'https://github.com/lacey-griffith/herbal-haven',
       live: 'https://herbalhaven.vercel.app',
     },
-    // Add more projects as needed
   ];
 
   return (
-    <section className="project-container section-parent neon-blue">
+    <section id="projects" className="project-container section-parent neon-blue">
       <h2>Projects</h2>
       {projects.map((project, i) => (
         <div className="project-card" key={i}>
-          <img src={project.image} alt={project.title} />
+          {project.image && <img src={project.image} alt={project.title} />}
           <h3>{project.title}</h3>
           <p>{project.description}</p>
           <div className="project-links">

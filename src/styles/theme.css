@@ -1,0 +1,8 @@
+:root {
+  --accent: #00cfff;
+  --text-dark: #111111;
+  --text-light: #333333;
+  --bg-card: rgba(255, 255, 255, 0.15);
+  --radius: 1rem;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}

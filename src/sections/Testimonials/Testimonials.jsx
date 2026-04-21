@@ -1,7 +1,6 @@
 import React from 'react';
 import './testimonials.css';
 
-
 function Testimonials() {
   const reviews = [
     {
@@ -19,11 +18,11 @@ function Testimonials() {
   ];
 
   return (
-    <section className="testimonial-container section-parent neon-green">
+    <section id="testimonials" className="testimonial-container section-parent neon-orange">
       <h2>Testimonials</h2>
       {reviews.map((item, i) => (
         <blockquote key={i} className="testimonial-quote">
-          <p>“{item.quote}”</p>
+          <p>"{item.quote}"</p>
           <footer>– {item.author}</footer>
         </blockquote>
       ))}

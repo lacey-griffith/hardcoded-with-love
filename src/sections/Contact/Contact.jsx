@@ -3,9 +3,9 @@ import './contact.css';
 
 function Contact() {
   return (
-    <div className="contact-container neon-green section-parent">
+    <div id="contact" className="contact-container neon-green section-parent">
       <h2>Contact</h2>
-      <p>Let’s make something magical together.</p>
+      <p>Let's make something magical together.</p>
       <form>
         <label htmlFor="name">Name</label>
         <input id="name" type="text" placeholder="Your name" />
