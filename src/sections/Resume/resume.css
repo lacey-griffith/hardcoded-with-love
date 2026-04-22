@@ -1,7 +1,10 @@
-/* resume.css */
-.resume-links a {
-  display: inline-block;
-  margin: 1rem;
-  font-weight: bold;
-  color: #111;
+.resume-container {
+  transform: rotate(0.5deg);
+}
+
+.resume-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
 }

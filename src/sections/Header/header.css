@@ -1,40 +1,64 @@
 .header-container {
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/bg-images/succulent-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--dark);
+  border-bottom: 3px solid var(--yellow);
+  padding: 0.75rem 2rem;
+  transition: box-shadow 0.3s ease;
 }
 
-.header-container h1 {
-  font-size: 2.75rem;
-  margin-bottom: 1rem;
+.header-container.scrolled {
+  box-shadow: 0 4px 0 var(--yellow);
 }
 
-.header-container p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.header-logo {
+  font-family: var(--font-doodle);
+  font-size: 1.4rem;
+  color: var(--yellow);
+  letter-spacing: 1px;
 }
 
 .header-container nav {
   display: flex;
-  justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-.header-container a {
-  color: var(--accent);
-  font-weight: 600;
-  text-decoration: none;
+.header-container nav a {
+  font-family: var(--font-doodle);
   font-size: 1rem;
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  position: relative;
 }
 
-.header-container a:hover {
-  text-decoration: underline;
+.header-container nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--yellow);
+  transition: width 0.2s ease;
+}
+
+.header-container nav a:hover {
+  color: var(--yellow);
+}
+
+.header-container nav a:hover::after {
+  width: 100%;
 }

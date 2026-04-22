@@ -1,8 +1,18 @@
 :root {
-  --accent: #00cfff;
-  --text-dark: #111111;
-  --text-light: #333333;
-  --bg-card: rgba(255, 255, 255, 0.15);
-  --radius: 1rem;
-  --shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  --yellow:  #f9e94e;
+  --pink:    #ff6eb4;
+  --blue:    #5bc8f5;
+  --purple:  #c084fc;
+  --orange:  #ffaa3b;
+  --green:   #7dde5a;
+  --dark:    #1a1a1a;
+  --white:   #fffef5;
+
+  --font-header: 'Fredoka One', cursive;
+  --font-doodle: 'Permanent Marker', cursive;
+  --font-body:   'Caveat', cursive;
+
+  --sticker-shadow: 4px 6px 0px rgba(0,0,0,0.25);
+  --sticker-border: 4px solid var(--dark);
+  --radius-sticker: 18px;
 }

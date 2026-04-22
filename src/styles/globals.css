@@ -1,121 +1,98 @@
-/* ===== RESET ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-    font-size: 16px; /* base for rem units */
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  background-image: url('/images/background_desktop.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: var(--dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
   body {
-    font-family: 'Poppins', 'Segoe UI', sans-serif;
-    background-image: url('/images/background_desktop.png');
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    color: #111;
-    line-height: 1.6;
-    overflow-x: hidden;
+    background-image: url('/images/background_mobile.png');
+    background-attachment: scroll;
   }
-  
-  /* Mobile override */
-  @media (max-width: 768px) {
-    body {
-      background-image: url('/images/background_mobile.png');
-      background-size: cover;
-      background-repeat: repeat;
-      background-attachment: scroll; /* often better on mobile */
-    }
-  }
-  
-  
-  /* ===== COLOR VARIABLES ===== */
-  /* :root {
-  } */
+}
 
-  /* ===== SECTION BG COLORS ===== */
-  .neon-yellow {
-    background-color: #fff740;
-  }
-  .neon-pink {
-    background-color: #ff3cac;
-  }
-  .neon-blue {
-    background-color: #00cfff;
-  }
-  .neon-purple {
-    background-color: #b24eff;
-  }
-  .neon-orange {
-    background-color: #ff9f1c;
-  }
-  .neon-green {
-    background-color: #39ff14;
-  }
-  
-  /* ===== TYPOGRAPHY ===== */
-  h1, h2, h3, h4 {
-    font-weight: 600;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
-  }
-  
-  p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    color: var(--text-light);
-  }
-  
-  /* ===== LINKS ===== */
-  a {
-    color: var(--accent);
-    text-decoration: none;
-  }
-  
-  a:hover,
-  a:focus {
-    text-decoration: underline;
-  }
-  
-  /* ===== BUTTONS ===== */
-  button {
-    background-color: var(--accent);
-    color: var(--text-dark);
-    padding: 0.75rem 1.25rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #6FA9B7;
-  }
-  
-  /* ===== LAYOUT HELPERS ===== */
-  .section-parent {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 4rem 2rem;
-    border-radius: 2rem;
-  }
+h1, h2, h3 {
+  font-family: var(--font-header);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
 
-  /* ===== ACCESSIBILITY ===== */
-  :focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 4px;
-  }
-  
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+  color: var(--dark);
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+/* ── Sticker card base ── */
+.sticker-card {
+  background: var(--white);
+  border: var(--sticker-border);
+  border-radius: var(--radius-sticker);
+  box-shadow: var(--sticker-shadow);
+  padding: 2rem;
+  position: relative;
+}
+
+/* ── Section wrapper ── */
+.section-parent {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  border: var(--sticker-border);
+  border-radius: var(--radius-sticker);
+  box-shadow: var(--sticker-shadow);
+  position: relative;
+}
+
+/* ── Neon fills ── */
+.neon-yellow  { background-color: var(--yellow); }
+.neon-pink    { background-color: var(--pink); }
+.neon-blue    { background-color: var(--blue); }
+.neon-purple  { background-color: var(--purple); }
+.neon-orange  { background-color: var(--orange); }
+.neon-green   { background-color: var(--green); }
+
+/* ── Doodle accent floaters ── */
+.doodle {
+  font-family: var(--font-doodle);
+  font-size: 1.4rem;
+  position: absolute;
+  opacity: 0.55;
+  pointer-events: none;
+  user-select: none;
+  transform: rotate(-8deg);
+}
+
+:focus-visible {
+  outline: 3px solid var(--dark);
+  outline-offset: 3px;
+}

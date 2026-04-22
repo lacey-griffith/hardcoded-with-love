@@ -1,12 +1,24 @@
 .carousel-wrapper {
-    max-width: 300px;
-    margin: 2rem auto;
-  }
-  
-  .carousel-wrapper img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    object-fit: cover;
-  }
-  
+  width: 220px;
+  height: 220px;
+}
+
+.carousel-wrapper img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Override slick arrows */
+.slick-prev, .slick-next {
+  z-index: 10;
+}
+
+.slick-prev { left: 6px; }
+.slick-next { right: 6px; }
+
+.slick-prev:before, .slick-next:before {
+  color: var(--dark);
+  font-size: 18px;
+}

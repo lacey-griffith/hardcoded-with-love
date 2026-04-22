@@ -1,8 +1,35 @@
+.testimonial-container {
+  transform: rotate(0.5deg);
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
 .testimonial-quote {
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 1rem;
-  max-width: 700px;
-  font-style: italic;
+  flex: 1 1 220px;
+  border: 4px solid var(--dark);
+  border-radius: 16px;
+  box-shadow: 5px 5px 0 var(--dark);
+  padding: 1.25rem 1.5rem;
+  font-style: normal;
+  transition: transform 0.2s ease;
+}
+
+.testimonial-quote:hover {
+  transform: rotate(0deg) scale(1.02) !important;
+}
+
+.testimonial-quote p {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.testimonial-quote footer {
+  font-family: var(--font-doodle);
+  font-size: 1rem;
 }

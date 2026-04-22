@@ -1,49 +1,81 @@
-.hero .hero-flex {
-  display: flex;
-  justify-content: center;
+.hero {
+  transform: rotate(-0.5deg);
+  margin-top: 2.5rem !important;
 }
 
-.hero {
-    padding: 4rem 2rem;
-    margin: 2rem auto;
-    max-width: 1000px;
-    box-shadow: 0 0 10px #f9ff4a;
-    text-align: center;
-    position: relative;
+.hero-flex {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-carousel-wrap {
+  flex: 0 0 220px;
+  transform: rotate(2deg);
+  border: 4px solid var(--dark);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 5px 5px 0 var(--dark);
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 220px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: var(--dark);
+  margin-bottom: 0.25rem;
+}
+
+.hero h2 {
+  font-size: 1.4rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.hero-socials a {
+  font-family: var(--font-doodle);
+  font-size: 1rem;
+  color: var(--dark);
+  border-bottom: 2px solid var(--dark);
+  padding-bottom: 1px;
+  transition: opacity 0.2s;
+}
+
+.hero-socials a:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .hero-flex {
+    flex-direction: column;
   }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    color: #111;
+  .hero-carousel-wrap {
+    width: 100%;
+    flex: unset;
   }
-  
-  .hero h2 {
-    font-size: 1.75rem;
-    margin-bottom: .25rem;
-    font-weight: 500;
-    color: #333;
-  }
-  
-  .hero p {
-    font-size: 1.1rem;
-    color: #222;
-    margin-bottom: 2rem;
-  }
-  
-  .hero-buttons button {
-    background: #111;
-    color: #fff740;
-    border-radius: 999px;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    margin: 0.5rem;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-    border: none;
-  }
-  
-  .hero-buttons button:hover {
-    transform: scale(1.05);
-  }
-  
+}
